@@ -15,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="config.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/config/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-194">
-              <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+            <state relative-caret-position="327">
+              <caret line="121" column="19" lean-forward="false" selection-start-line="121" selection-start-column="16" selection-end-line="121" selection-end-column="19" />
               <folding>
                 <marker date="1512130618740" expanded="true" signature="0:219" ph="imports: &lt;5 items&gt;" />
               </folding>
@@ -94,11 +94,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="security.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="security.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/config/security.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="824">
-              <caret line="55" column="29" lean-forward="false" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
+            <state relative-caret-position="793">
+              <caret line="64" column="71" lean-forward="false" selection-start-line="64" selection-start-column="71" selection-end-line="64" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -135,7 +135,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>formatt</find>
       <find>tool</find>
       <find>libs</find>
       <find>enab</find>
@@ -165,6 +164,7 @@
       <find>sonata_user</find>
       <find>user_c</find>
       <find>sonat_us</find>
+      <find>ava</find>
     </findStrings>
     <replaceStrings>
       <replace>web</replace>
@@ -543,12 +543,12 @@
       <workItem from="1511955816855" duration="8718000" />
       <workItem from="1512029646993" duration="14321000" />
       <workItem from="1512119946259" duration="930000" />
-      <workItem from="1512122600631" duration="8839000" />
+      <workItem from="1512122600631" duration="8864000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99945000" />
+    <option name="totallyTimeSpent" value="99970000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1919" y="25" width="1922" height="1176" extended-state="6" />
@@ -949,21 +949,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-194">
-          <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-          <folding>
-            <marker date="1512130618740" expanded="true" signature="0:219" ph="imports: &lt;5 items&gt;" />
-          </folding>
+        <state relative-caret-position="793">
+          <caret line="64" column="71" lean-forward="false" selection-start-line="64" selection-start-column="71" selection-end-line="64" selection-end-column="71" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="824">
-          <caret line="55" column="29" lean-forward="false" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
-          <folding />
+        <state relative-caret-position="327">
+          <caret line="121" column="19" lean-forward="false" selection-start-line="121" selection-start-column="16" selection-end-line="121" selection-end-column="19" />
+          <folding>
+            <marker date="1512130618740" expanded="true" signature="0:219" ph="imports: &lt;5 items&gt;" />
+          </folding>
         </state>
       </provider>
     </entry>
