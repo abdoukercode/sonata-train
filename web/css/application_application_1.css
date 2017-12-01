@@ -1,0 +1,108 @@
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px; }
+
+.col-xs-5ths {
+    width: 20%;
+    float: left; }
+
+@media (min-width: 768px) {
+    .col-sm-5ths {
+        width: 20%;
+        float: left; } }
+@media (min-width: 992px) {
+    .col-md-5ths {
+        width: 20%;
+        float: left; } }
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left; } }
+@media (min-width: 1500px) {
+    .container {
+        width: 1500px; } }
+.btn-full {
+    width: 100%; }
+
+div.form-group.has-error {
+    position: relative; }
+
+.form-errors {
+    top: 0;
+    right: 0;
+    list-style-type: none;
+    padding: 0;
+    float: right; }
+.form-errors .form-error {
+    background: #F56954;
+    color: #FFF;
+    padding: 2px 10px; }
+
+.icheckbox {
+    margin: 0.3em; }
+
+.radio label,
+.checkbox label {
+    padding-left: 0; }
+
+.radio, .checkbox {
+    display: inline-block;
+    margin: 0 10px; }
+
+.flash,
+.alert {
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 0;
+    padding: 5px;
+    margin: 5px 0;
+    border: none;
+    border-bottom: 3px solid; }
+.flash.flash-notice, .flash.alert-warning,
+.alert.flash-notice,
+.alert.alert-warning {
+    background-color: #F39C12;
+    border-color: #c87f0a; }
+.flash.flash-success, .flash.alert-success,
+.alert.flash-success,
+.alert.alert-success {
+    background-color: #00A65A;
+    border-color: #00733e; }
+.flash.flash-error, .flash.alert-danger,
+.alert.flash-error,
+.alert.alert-danger {
+    background-color: #F56954;
+    border-color: #f23f24; }
+.flash.flash-info, .flash.alert-info,
+.alert.flash-info,
+.alert.alert-info {
+    background-color: #A2B6C0;
+    border-color: #849eab; }
+.flash.alert-dismissible .close,
+.alert.alert-dismissible .close {
+    top: 4px;
+    right: 10px;
+    opacity: 0.8;
+    color: white; }
+
+body, html {
+    background: #FFFFFF; }
+
+.morelink {
+    color: white !important;
+    margin-top: 15px !important;
+    text-decoration: underline !important;
+    cursor: pointer;
+}
+.pageWrapper .articlesWrapper .sectionArticle.odd span {
+    margin-left: 90px;
+    /*margin-bottom: 20px !important;*/
+}

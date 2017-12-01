@@ -1,0 +1,319 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="/web/img/favicon.png" rel="icon"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link href="/css/673db7e_styles_1.css" rel="stylesheet"/>
+
+
+    <link href="/css/application_application_1.css" rel="stylesheet"/>
+
+
+    <title>A.J.D Amis de jeudi dimanche</title>
+
+    <meta name="description" content="A.J.D Amis de jeudi dimanche"/>
+
+
+</head>
+<body class="light     faq
+">
+<div class="container headerWrapper">
+    <header>
+        <div id="logo">
+            <a href="/"></a>
+        </div>
+        <nav class="mainNav">
+            <ul class="menu_lvl1">
+                <li><a href="/association/">l'association</a></li>
+                <li class="pointSeparator">.</li>
+                <li><a href="/stage/">stage en mer</a></li>
+                <li class="pointSeparator">.</li>
+                <li><a href="/formation/">formation</a></li>
+                <li class="pointSeparator">.</li>
+                <li><a href="/flotte/">la flotte</a></li>
+            </ul>
+        </nav>
+
+        <nav class="secondNav">
+            <ul class="menu_lvl1">
+                <li><a href="/fond/">dons</a></li>
+                <li class="pointSeparator">.</li>
+                <li><a href="/contact/">contact</a></li>
+                <li class="pointSeparator">.</li>
+                <li>
+                    <a href="#" class="facebook"><img src="{{ asset('img/svg/facebook2.svg') }}"
+                                                      alt="logo facebook"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</div>
+
+<br>
+
+<section class="row section-flash">
+    <div class="container">
+
+    </div>
+</section>
+
+<div class="main-content">
+
+
+    <style>
+
+
+    </style>
+
+    <div class="pageWrapper">
+
+        <!-- Entête de la page -->
+        <section class="pageHeader" style='background-image:url(/images/img2.jpg);'>
+            <nav>
+                <h2>l'association</h2>
+
+                <ul>
+
+                    {% for post in posts %}
+                        {% if (post.category.name) == 'Association' and (post.enabled) == true %}
+                            <li><a href="#{{ post.id }}">{{ post.title }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+
+            </nav>
+        </section>
+
+        <!-- Corps de page -->
+        <div class=articlesWrapper>
+            {% for post in posts %}
+                {% if (post.category.name) == 'Association' and (post.enabled) == true %}
+                    {% if post.positionImage %}
+                        <section class="sectionArticle odd" id="{{ post.id }}">
+                    {% else %}
+                        <section class="sectionArticle even" id="{{ post.id }}">
+                    {% endif %}
+                        <div class="articleImage">
+                            <img src="{% path post.picture, 'reference' %}" alt=""/>
+                        </div>
+                        <article>
+                            <div class="block-text">
+                                {{ post.body | raw }}
+                            </div>
+                        </article>
+                    </section>
+                {% endif %}
+            {% endfor %}
+
+        </div>
+
+        <div class="basPage">
+            <button id="goTop"><img src="{{ asset('images/svg/goTop.svg') }}" alt="flêche pour remonter la fenêtre">
+            </button>
+        </div>
+
+    </div>
+
+    <script
+            src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="{{ asset('/css/jquery.shorten.min.js') }}"></script>
+
+    <script>
+        (function ($) {
+            $(".block-text").shorten({
+                "showChars": 700,
+                "moreText": "Lire la suite",
+                "lessText": "Reduire le texte",
+            });
+        })(jQuery);
+
+    </script>
+
+
+    {#<script>#}
+    {#$(function(){#}
+
+    {#$(window).scroll(function(){#}
+    {#if ($(this).scrollTop() > 50) {#}
+    {#$('#goTop').fadeIn('slow');#}
+    {#} else {#}
+    {#$('#goTop').fadeOut('slow');#}
+    {#}#}
+    {#});#}
+    {#$('#goTop').click(function(){#}
+    {#$("html, body").animate({ scrollTop: 0 }, 500);#}
+    {#//$("html, body").scrollTop(0); //For without animation#}
+    {#return false;#}
+    {#});#}
+    {#});#}
+
+    {#</script>#}
+    {#<script>#}
+    {#function myFunction() {#}
+    {#var x = document.getElementById("fullTextArticle");#}
+    {#var y = document.getElementById("reduire");#}
+    {#var z = document.getElementById("section1");#}
+
+    {#if (x.style.display === "none") {#}
+    {#x.style.display = "block";#}
+    {#y.style.display="block";#}
+    {#z.style.display="none";#}
+    {#}#}
+    {#}#}
+    {#function myFunctions()#}
+    {#{#}
+    {#var x = document.getElementById("fullTextArticle");#}
+    {#var y = document.getElementById("reduire");#}
+    {#var z = document.getElementById("section1");#}
+    {#x.style.display = "none";#}
+    {#y.style.display="none";#}
+    {#z.style.display="block";#}
+    {#}#}
+    {#function ouvrirequipe()#}
+    {#{#}
+
+    {#var x = document.getElementById("equipeArticle");#}
+    {#var y = document.getElementById("redequipe");#}
+    {#var z = document.getElementById("equipes");#}
+
+
+    {#if (x.style.display === "none") {#}
+    {#x.style.display = "block";#}
+    {#y.style.display="block";#}
+    {#z.style.display="none";#}
+    {#}#}
+
+    {#}#}
+
+    {#function  femerequipe()#}
+    {#{#}
+
+    {#var x = document.getElementById("equipeArticle");#}
+    {#var y = document.getElementById("redequipe");#}
+    {#var z = document.getElementById("equipes");#}
+    {#x.style.display = "none";#}
+    {#y.style.display="none";#}
+    {#z.style.display="block";#}
+    {#}#}
+
+    {#function ouvriraction()#}
+    {#{#}
+
+    {#var x = document.getElementById("actionArticle");#}
+    {#var y = document.getElementById("redaction");#}
+    {#var z = document.getElementById("actions");#}
+
+    {#if (x.style.display === "none") {#}
+    {#x.style.display = "block";#}
+    {#y.style.display="block";#}
+    {#z.style.display="none";#}
+    {#}#}
+
+    {#}#}
+
+    {#function  femeraction()#}
+    {#{#}
+
+    {#var x = document.getElementById("actionArticle");#}
+    {#var y = document.getElementById("redaction");#}
+    {#var z = document.getElementById("actions");#}
+    {#x.style.display = "none";#}
+    {#y.style.display="none";#}
+    {#z.style.display="block";#}
+    {#}#}
+    {#</script>#}
+
+
+</div>
+<footer class="container">
+    <nav class="mainNav">
+        <ul class="menu_lvl1">
+            <li>
+                <div class="navTitle"><a href="/association/">l'association</a></div>
+                <ul class="menu_lvl2">
+                    <li><a href="/association/#jaouen">Le père Jaouen</a></li>
+                    <li><a href="/association/#equipe">L'équipe</a></li>
+                    <li><a href="/association/#action">Notre action</a></li>
+                    <li><a href="/association/#stagadon">L'île de Stagadon</a></li>
+                </ul>
+            </li>
+            <li class="separators">
+                <div class="pointSeparator">.</div>
+                <div class="verticalSeparator"></div>
+            </li>
+            <li>
+                <div class="navTitle"><a href="/stage/">stage en mer</a></div>
+                <ul class="menu_lvl2">
+                    <li><a href="/stage/#presentation">Présentation</a></li>
+                    <li><a href="/stage/#calendrier">Calendriers</a></li>
+                    <li><a href="/stage/#reservation">Réservations</a></li>
+                </ul>
+            </li>
+            <li class="separators">
+                <div class="pointSeparator">.</div>
+                <div class="verticalSeparator"></div>
+            </li>
+            <li>
+                <div class="navTitle"><a href="/formation/">formation</a></div>
+                <ul class="menu_lvl2">
+                    <li><a href="/formation/#pourqui">Pour qui ?</a></li>
+                    <li><a href="/formation/#pourquoi">Pourquoi ?</a></li>
+                    <li><a href="/formation/#comment">Comment ?</a></li>
+                </ul>
+            </li>
+            <li class="separators">
+                <div class="pointSeparator">.</div>
+                <div class="verticalSeparator"></div>
+            </li>
+            <li>
+                <div class="navTitle"><a href="/flotte/">la flotte</a></div>
+                <ul class="menu_lvl2">
+                    <li><a href="/flotte/#espoir">Le Bel Espoir</a></li>
+                    <li><a href="/flotte/#avis">Le Rara Avis</a></li>
+                    <li><a href="/flotte/#flotille">La flotille</a></li>
+                    <li><a href="/flotte/#marseille">AJD Marseille</a></li>
+                </ul>
+            </li>
+            <li class="separators">
+                <div class="pointSeparator">.</div>
+                <div class="verticalSeparator"></div>
+            </li>
+        </ul>
+    </nav>
+
+    <nav class="secondNav">
+        <ul class="menu_lvl1">
+            <li><a href="/fond/">dons</a></li>
+            <li><a href="/contact/">contact</a></li>
+            <li>
+                <a href="#" class="facebook"><img src="{{ asset('img/svg/facebook2.svg') }}" alt="Logo facebook"></a>
+            </li>
+        </ul>
+    </nav>
+
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+{#<script src="/js/libs_bootstrap.min_1.js"></script>#}
+<script src="/web/js/libs_select2.full.min_2.js"></script>
+<script src="/web/js/libs_select2-fr_3.js"></script>
+<script src="/web/js/libs_city-autocomplete_4.js"></script>
+
+<script src="/web/js/application_application_1.js"></script>
+
+<script src="/web/bundles/fosjsrouting/js/router.js"></script>
+<script src="/web/js/routing?callback=fos.Router.setData"></script>
